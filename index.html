@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/table.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/panel.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,16 +15,12 @@
     <script src='/test/util.test.js'></script>
     <script src='./modules/table.js'></script>
     <script src='./modules/modal.js'></script>
+    <script src='./modules/panel.js'></script>
     <script>
         var app = document.getElementById('app');
         
-        var closeModal = function closeModal(e) { 
-            if (!e.target.classList.contains('modal')) {
-                modal.remove();
-            }
-        }
-        app.addEventListener('click', closeModal);
-        app.append(table);
+        app.append(table(app, modal));
+        app.append(panel);
     </script>
 </body>
 </html>

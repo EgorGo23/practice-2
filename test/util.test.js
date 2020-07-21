@@ -31,52 +31,79 @@
     }
 
     var isString = function isString() {
+        console.log('__Test isString__');
         displayTest(util.isString);
     };
 
     var isNumber = function isNumber() {
+        console.log('__Test isNumber__');
         displayTest(util.isNumber);
     };
 
     var isNan = function isNan() {
+        console.log('__Test isNan__');
         displayTest(util.isNan);
     };
 
     var isBool = function isBool() {
+        console.log('__Test isBool__');
         displayTest(util.isBool);
     };
 
     var isNull = function isNull() {
+        console.log('__Test isNull__');
         displayTest(util.isNull);
     };
 
     var isUndef = function isUndef() {
+        console.log('__Test isUndef__');
         displayTest(util.isUndef);
     };
 
     var isSymb = function isSymb() {
+        console.log('__Test isSymb__');
         displayTest(util.isSymb);
     };
 
     var isObj = function isObj() {
+        console.log('__Test isObj__');
         displayTest(util.isObj);
     };
 
     var toNumber = function toNumber() {
+        console.log('__Test toNumber__');
         displayTest(util.toNumber);
     };
 
     var toStr = function toStr() {
+        console.log('__Test toStr__');
         displayTest(util.toStr);
     };
 
     var toBool = function toBool() {
+        console.log('__Test toBool__');
         displayTest(util.toBool);
     };
 
     var toObj = function toObj() {
+        console.log('__Test toObj__');
         displayTest(util.toObj);
     };
+
+    var startAllTests = function startAllTests() {
+        isString();
+        isNumber();
+        isNan();
+        isBool();
+        isNull();
+        isUndef();
+        isSymb();
+        isObj();
+        toNumber();
+        toStr();
+        toBool();
+        toObj();
+    }
 
     return {
         isString: isString,
@@ -91,5 +118,6 @@
         toStr: toStr,
         toBool: toBool,
         toObj: toObj,
+        startAllTests: startAllTests,
     }
 })(util);

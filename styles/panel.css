@@ -1,0 +1,36 @@
+.panel {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background-color: #e2d86d;
+  border-radius: 3px;
+  opacity: 0.5;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.panel .panel__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  border-bottom: 3px solid blue;
+}
+.panel .panel__btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 255, 0.5);
+  cursor: pointer;
+}
+.panel .panel__btn:hover {
+  border: 3px solid rgba(11, 11, 99, 0.5);
+}
+
+/*# sourceMappingURL=panel.css.map */
