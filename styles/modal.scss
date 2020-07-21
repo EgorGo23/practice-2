@@ -1,0 +1,23 @@
+$background: palegoldenrod;
+$border: red;
+$fontSize: 18px;
+
+.modal {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    background-color: $background;
+    opacity: 0.5;
+    border: 3px solid $border;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    .modal__text {
+        font-size: $fontSize;
+    }
+}

@@ -1,0 +1,20 @@
+.modal {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background-color: palegoldenrod;
+  opacity: 0.5;
+  border: 3px solid red;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal__text {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=modal.css.map */

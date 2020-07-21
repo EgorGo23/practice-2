@@ -1,0 +1,20 @@
+.table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 200px;
+  font-size: 18px;
+  width: 300px;
+  color: #00A4F7;
+}
+.table th, .table td {
+  padding: 20px;
+}
+.table td {
+  text-align: center;
+  cursor: pointer;
+}
+.table td:hover {
+  color: #12608d;
+}
+
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,25 @@
+$fontSize: 18px;
+$blue: #00A4F7;
+$hoverBlue: #12608d;
+
+.table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: $fontSize;
+    width: 300px;
+    color: $blue;
+
+    th, td {
+        padding: 20px;
+    }
+
+    td {
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: $hoverBlue;
+        }
+    }
+}
