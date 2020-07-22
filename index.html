@@ -11,16 +11,16 @@
 </head>
 <body>
     <div id='app'></div>
-    <script src='./modules/util.js'></script>
-    <script src='/test/util.test.js'></script>
+    <script src='./modules/testUtils.js'></script>
+    <script src='/test/testUtils.test.js'></script>
+    <script src='./modules/htmlUtils.js'></script>
+    
     <script src='./modules/table.js'></script>
     <script src='./modules/modal.js'></script>
     <script src='./modules/panel.js'></script>
     <script>
         var app = document.getElementById('app');
-        
-        app.append(table(app, modal));
-        app.append(panel);
+        htmlUtils.addElementsToParent(app, [table.tableEl, panel.panelEl]);
     </script>
 </body>
 </html>

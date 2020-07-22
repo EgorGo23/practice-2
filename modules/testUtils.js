@@ -1,4 +1,4 @@
-;var util = (function util() {
+;var testUtils = (function util() {
     var isString = function isString(value) {
         return typeof value === 'string';
     };
@@ -30,6 +30,10 @@
     var isObj = function isObj(value) {
         return value !== null && typeof value === 'object';
     };
+
+    var isFunc = function isFunc(value) {
+        return typeof value === "function";
+    }
 
     var toNumber = function toNumber(value) {
         value = value || 0;
@@ -65,6 +69,7 @@
         isUndef: isUndef,
         isSymb: isSymb,
         isObj: isObj,
+        isFunc: isFunc,
         toNumber: toNumber,
         toStr: toStr,
         toBool: toBool,

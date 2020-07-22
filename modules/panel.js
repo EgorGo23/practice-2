@@ -1,22 +1,9 @@
-var panel = (function panel() {
-    var panelEl = document.createElement('div');
-    panelEl.className = 'panel';
+;var panel = (function panel() {
+    var panelEl = htmlUtils.createHtmlElm('div', { className: 'panel' });
+    var btn = htmlUtils.createHtmlElm('button', { className: 'panel__btn', textContent: 'Test start', handlers: [ testUtilsTests.startAllTests ] });
+    var header = htmlUtils.createHtmlElm('div', { className: 'panel__header' });
 
-    var btn = document.createElement('button');
-    btn.className = 'panel__btn';
-    btn.textContent = 'Util test start';
-
-    var header = document.createElement('div');
-    header.className = 'panel__header';
-
-    var startTest = function startTest() {
-        utilTests.startAllTests();
+    return {
+        panelEl: htmlUtils.addElementsToParent(panelEl, [header, btn]),
     };
-
-    btn.addEventListener('click', startTest);
-
-    panelEl.append(header);
-    panelEl.append(btn);
-
-    return panelEl;
 })();
