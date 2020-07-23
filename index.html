@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/table.css">
-    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/panel.css">
     <title>Document</title>
 </head>
 <body>
-    <div id='app'></div>
-    <script src='./modules/testUtils.js'></script>
-    <script src='/test/testUtils.test.js'></script>
-    <script src='./modules/htmlUtils.js'></script>
+    <div id='app'>
+        <table class='table'>
+            <thead class='table__head'>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody class='table__body body'>
+                <tr>
+                    <td class="body__item">James</td>
+                    <td class="body__item">Maxwell</td>
+                </tr>
+                <tr>
+                    <td class="body__item">James</td>
+                    <td class="body__item">Maxwell</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class='panel'>
+            <div class='panel__header'></div>
+            <button class='panel__btn'>Test start</button>
+        </div>
+    </div>
     
+    <script src='./modules/testUtils.js'></script>
+    <script src='./test/testUtils.test.js'></script>
     <script src='./modules/table.js'></script>
-    <script src='./modules/modal.js'></script>
     <script src='./modules/panel.js'></script>
-    <script>
-        var app = document.getElementById('app');
-        htmlUtils.addElementsToParent(app, [table.tableEl, panel.panelEl]);
-    </script>
 </body>
 </html>
