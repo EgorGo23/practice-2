@@ -12,7 +12,7 @@ $hoverBlue: #12608d;
 
     th, td {
         padding: 20px;
-        border: 2px solid black;
+        border: 2px solid rgb(126, 123, 123);
     }
 
     td {
@@ -22,5 +22,36 @@ $hoverBlue: #12608d;
         &:hover {
             color: $hoverBlue;
         }
+    }   
+}
+
+.table_disabled {
+    opacity: 0.5;
+    user-select: none;
+
+    td {
+        cursor: auto;
+
+        &:hover {
+            color: $blue; 
+            
+        }
     }
+}
+
+
+.table_display_none {
+    display: none;
+}
+
+.table_display_block {
+    display: block;
+}
+
+.table_display_flex {
+    display: flex;
+}
+
+.table_display_table {
+    display: table;
 }
